@@ -1,14 +1,18 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #f0f0f0; /* Light Grey Background Color */
+    background-color: violet; /* Light Grey Background Color */
+  }
+  body,html{
+    height: 100%;
   }
   
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
+
   }
   
   .temp {
