@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: violet;
+}
+
+
+.temp, #butt {
+    /* display: ; */
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border: none;
+    color: white;
+    background-color: hotpink;
+}
+#butt{
+    cursor: pointer;
+}
