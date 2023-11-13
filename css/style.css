@@ -1,23 +1,95 @@
-.container{
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Light Grey Background Color */
+  }
+  
+  .container {
     display: flex;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-}
-
-body{
-    background-color: violet;
-}
-
-
-.temp, #butt {
-    /* display: ; */
-    padding: 10px 10px;
-    margin: 10px 10px;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .temp {
+    background-color: #8e44ad; /* Violet Container Background Color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White Text Color */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  
+  input[type="number"] {
+    appearance: textfield;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #913D88; /* Dark Violet Border Color on Focus */
+  }
+  
+  input[type="number"]:hover {
+    border-color: #fff; /* White Border Color on Hover */
+  }
+  
+  input[type="number"]::placeholder {
+    color: #ccc; /* Light Grey Placeholder Text Color */
+  }
+  
+  button {
+    background-color: #6C3483; /* Darker Violet Button Background Color */
+    color: #fff; /* White Button Text Color */
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
-    color: white;
-    background-color: hotpink;
-}
-#butt{
+    border-radius: 4px;
     cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #7D3C98; /* Slightly Darker Violet on Hover */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .temp {
+        padding: 10px;
+    }
 }
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+  
